@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Controller.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TesteUnitario</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Controller.java</span></div><h1>Controller.java</h1><pre class="source lang-java linenums">public class Controller extends Funcoes{
+    private double resultado;
+    private String retorno;
+
+<span class="fc" id="L5">    public Controller (){ }</span>
+
+    public void realizarConta(char func, double num1, double num2){
+<span class="fc bfc" id="L8" title="All 5 branches covered.">        switch (func){</span>
+            case '+':
+                //resultado = soma(num1, num2);
+<span class="fc" id="L11">                resultado = 20;</span>
+<span class="fc" id="L12">                retorno = &quot;A soma é &quot;+resultado;</span>
+<span class="fc" id="L13">                break;</span>
+
+            case '-':
+                //resultado = subtracao(num1, num2);
+<span class="fc" id="L17">                resultado = 0;</span>
+<span class="fc" id="L18">                retorno = &quot;A subtracao é &quot;+resultado;</span>
+<span class="fc" id="L19">                break;</span>
+
+            case '*':
+                //resultado = multiplicacao(num1, num2);
+<span class="fc" id="L23">                resultado = 100;</span>
+<span class="fc" id="L24">                retorno = &quot;A multiplicação é &quot;+resultado;</span>
+<span class="fc" id="L25">                break;</span>
+
+            case '/':
+<span class="fc" id="L28">                resultado = divisao(num1, num2);</span>
+<span class="fc" id="L29">                retorno = &quot;A divisão é &quot;+resultado;</span>
+<span class="fc" id="L30">                break;</span>
+
+            default:
+<span class="fc" id="L33">                retorno = &quot;Caractere inválido&quot;;</span>
+                break;
+        }
+
+<span class="fc" id="L37">        System.out.println(retorno);</span>
+<span class="fc" id="L38">    }</span>
+
+    public String getRetorno() {
+<span class="fc" id="L41">        return retorno;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
