@@ -8,5 +8,5 @@ Para obter 100% de cobertura de código, é necessário comentar no POM.xml as t
 
 (Exemplo)
 
-                'resultado = multiplicacao(num1, num2);
+                `resultado = multiplicacao(num1, num2);
                 //resultado = 100;`
