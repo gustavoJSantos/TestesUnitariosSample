@@ -6,7 +6,7 @@ Certas partes de código podem estar comentadas no momento para mostrar uma no c
 
 Para obter 100% de cobertura de código, é necessário comentar no POM.xml as tags `include`, as variáveis `resultado = ` e descomentar as variáveis `resultado = função()`.
 
-`(Exemplo)
+(Exemplo)
 
-                resultado = multiplicacao(num1, num2);
+                'resultado = multiplicacao(num1, num2);
                 //resultado = 100;`
